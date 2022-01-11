@@ -59,6 +59,7 @@ export class SurveyQuestionFile extends SurveyQuestionElementBase {
         className={this.question.getChooseFileCss()}
         htmlFor={this.question.inputId}
         aria-label={this.question.chooseButtonCaption}
+        aria-required={this.question.ariaRequired}
       >
         <span>{this.question.chooseButtonCaption}</span>
         {(!!this.question.cssClasses.chooseFileIconId) ? <SvgIcon iconName={this.question.cssClasses.chooseFileIconId} size={"auto"}></SvgIcon>: null }
